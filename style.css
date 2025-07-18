@@ -1,0 +1,354 @@
+*{border: 0; padding: 0; margin: 0;}
+
+body{ 
+    font-family: sans-serif;
+}
+
+.grid-container{
+    display: flex;
+}
+
+.sidebar{
+    background-color: rgb(47, 47, 221);
+    height: 920px;
+    width: 15%;
+    left: 0;
+    position: fixed;
+}
+ 
+.content-container{
+    background-color: grey;
+    height: 805px;
+    width: 85%;
+    margin-top: 115px;
+    margin-left: 288px;
+}
+
+.Dashboard{
+    position: relative;
+    width: 75%;
+    display: flex;
+    gap: 10px;
+    margin: 15px 0 45px 25px;
+    color: white;
+    cursor: pointer;
+}
+
+.Dashboard img{
+    width: 20%;
+}
+
+.Dashboard h2{
+    margin-top: 3px;
+}
+
+.Home{
+    position: relative;
+    width: 50%;
+    display: flex;
+    gap: 15px;
+    margin: 0 0 20px 35px;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    cursor: pointer;
+}
+
+.Home::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px; 
+  width: 0;
+  background: white ; 
+  transition: width 0.3s ease;
+}
+
+.Home:hover::after {
+  width: 70%;
+}
+
+
+
+.Profile{
+    position: relative;
+    width: 50%;
+    display: flex;
+    gap: 15px;
+    margin: 0 0 20px 35px;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    cursor: pointer;
+}
+
+.Profile::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+.Profile:hover::after{
+    width: 75%;
+}
+
+.Messages{
+    position: relative;
+    width: 50%;
+    display: flex;
+    gap: 15px;
+    margin: 0 0 17.5px 35px;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    cursor: pointer;
+}
+
+.Messages::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+.Messages:hover::after{
+    width: 95%;
+}
+
+.History{
+    position: relative;
+    width: 50%;
+    display: flex;
+    gap: 15px;
+    margin: 0 0 20px 35px;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    cursor: pointer;
+}
+
+.History::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+.History:hover::after{
+    width: 80%;
+}
+
+.Tasks{
+    position: relative;
+    width: 50%;
+    display: flex;
+    gap: 15px;
+    margin: 0 0 20px 35px;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    cursor: pointer;
+}
+
+.Tasks::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+.Tasks:hover::after{
+    width: 69%;
+}
+
+.Communities{
+    position: relative;
+    width: 50%;
+    display: flex;
+    gap: 15px;
+    margin: 0 0 70px 35px;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    cursor: pointer;
+}
+
+.Communities::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+.Communities:hover::after{
+    width: 117%;
+}
+
+.Settings{
+    position: relative;
+    width: 50%;
+    display: flex;
+    gap: 15px;
+    margin: 0 0 20px 35px;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    cursor: pointer;
+}
+
+.Settings::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+.Settings:hover::after{
+    width: 85%;
+}
+
+.Support{
+    position: relative;
+    width: 50%;
+    display: flex;
+    gap: 15px;
+    margin: 0 0 20px 35px;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    cursor: pointer;
+}
+
+.Support::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+.Support:hover::after{
+    width: 83%;
+}
+
+.Privacy{
+    position: relative;
+    width: 50%;
+    display: flex;
+    gap: 15px;
+    margin: 0 0 20px 35px;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    cursor: pointer;
+}
+
+.Privacy::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+.Privacy:hover::after{
+    width: 80%;
+}
+
+.navbar{
+    background-color: white;
+    height: 160px;
+    width: 85%;
+    left: 0;
+    position: fixed;
+    margin-left: 287.5px;
+    box-shadow: 30px 0px 30px 0px rgb(59, 57, 57);
+}
+
+.first-header{
+    display: flex;
+    border: 5px solid blue;
+    height: 50px;
+}
+
+.search{
+    position: relative;
+    margin: 20px 0px 0px 40px;
+    cursor: pointer;
+}
+
+.search img{
+    width: 85%;
+}
+
+.search-input input{
+    background-color: rgb(207, 209, 209);
+    height: 25px;
+    border-radius: 30dvh;
+    margin: 16px 0px 0px 10px;
+}
+
+.notification{
+    position: relative;
+    margin: 20px 0px 0px 40px;
+    cursor: pointer;
+}
+
+.notification img{
+    width: 90%;
+}
+
+.profile-photo{
+    position: relative;
+    margin: 8px 0px 0px 20px;
+}
+
+.profile-photo img{
+    object-fit: cover;
+    height: 40px;
+    width: 145%;
+    border-radius: 50% ;
+}
+
+.my-name{
+    position: relative;
+    
+}
+
+.second-header{
+    display: flex;
+    border: 5px solid blue;
+    height: 90px;
+}
