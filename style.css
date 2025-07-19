@@ -16,13 +16,6 @@ body{
     position: fixed;
 }
  
-.content-container{
-    background-color: grey;
-    height: 805px;
-    width: 85%;
-    margin-top: 115px;
-    margin-left: 288px;
-}
 
 .Dashboard{
     position: relative;
@@ -349,6 +342,36 @@ body{
 
 .second-header{
     display: flex;
-    border: 5px solid blue;
+    border: 5px solid blue; 
     height: 90px;
+}
+
+.content-container{
+    background-color: grey;
+    height: 805px;
+    width: 85%;
+    margin-top: 115px;
+    margin-left: 288px;
+}
+
+.content-header{
+    border: 5px solid blue;
+    height: 100px;
+}
+
+.content-sides-container{
+    display: flex;
+    margin-top: 105px;
+}
+
+.content-left-side{
+    border: 5px solid orange;
+    width: 70%;    
+    height: 50px;
+}
+
+.content-right-side{
+    border: 5px solid yellow;
+    width: 30%;
+    height: 680px;
 }
