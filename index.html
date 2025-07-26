@@ -3,81 +3,253 @@
 <head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio</title>
+    <title>Landing-Page</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
 <body>
     <main>
-        <section class="grid-container">
-            <div class="sidebar">  
-                <div class="Dashboard">
-                    <img src="Icons/light-theme-icons/dashboard.png" alt="dashboard" >
-                    <h2>Dashboard</h2>
-                </div>
-                <div class="Home">
-                    <img src="Icons/light-theme-icons/home.png" alt="home" >
-                    <p>Home</p>
-                </div>
-                <div class="Profile">
-                    <img src="Icons/light-theme-icons/profile.png" alt="profile" >
-                    <p>Profile</p>
-                </div>
-                <div class="Messages">
-                    <img src="Icons/light-theme-icons/message.png" alt="messages" >
-                    <p>Messages</p>
-                </div>
-                <div class="History">
-                    <img src="Icons/light-theme-icons/history.png" alt="history" >
-                    <p>History</p>
-                </div>
-                <div class="Tasks">
-                    <img src="Icons/light-theme-icons/task.png" alt="tasks" >
-                    <p>Tasks</p>
-                </div>
-                <div class="Communities">
-                    <img src="Icons/light-theme-icons/community.png" alt="communities" >
-                    <p>Communities</p>
-                </div>
-                <div class="Settings">
-                    <img src="Icons/light-theme-icons/setting.png" alt="settings" >
-                    <p>Settings</p>
-                </div>
-                <div class="Support">
-                    <img src="Icons/light-theme-icons/support.png" alt="support" >
-                    <p>Support</p>
-                </div>
-                <div class="Privacy">
-                    <img src="Icons/light-theme-icons/privacy.png" alt="privacy" >
-                    <p>Privacy</p>
-                </div>
+        <section class="side-content">
+            <div class="dashboard">
+                <img src="Icons/light-theme-icons/dashboard.png">
+                <h1>Dashboard</h1>
             </div>
-            <div class="navbar">
-                <div class="first-header">
-                    <div class="search">
-                        <img src="Icons/light-theme-icons/search.png" alt="search">
+            <div class="home">
+                <img src="Icons/light-theme-icons/home.png">
+                <p>Home</p>
+            </div>
+            <div class="profile">
+                <img src="Icons/light-theme-icons/profile.png">
+                <p>Profile</p>
+            </div>
+            <div class="messages">
+                <img src="Icons/light-theme-icons/message.png">
+                <p>Messages</p>
+            </div>
+            <div class="history">
+                <img src="Icons/light-theme-icons/history.png">
+                <p>History</p>
+            </div>
+            <div class="tasks">
+                <img src="Icons/light-theme-icons/task.png">
+                <p>Tasks</p>
+            </div>
+            <div class="communities">
+                <img src="Icons/light-theme-icons/community.png">
+                <p>Communities</p>
+            </div>
+            <div class="setting">
+                <img src="Icons/light-theme-icons/setting.png">
+                <p>Settings</p>
+            </div>
+            <div class="support">
+                <img src="Icons/light-theme-icons/support.png">
+                <p>Support</p>
+            </div>
+            <div class="privacy">
+                <img src="Icons/light-theme-icons/privacy.png">
+                <p>Privacy</p>
+            </div>
+        </section>
+
+        
+        <section class="main-content">
+            <div class="first-header">
+                <div class="search-container">
+                    <div class="search-icon-container">
+                        <img src="Icons/light-theme-icons/search.png">
                     </div>
-                    <div class="search-input">
-                        <label for="Search">
-                            <input type="search" name="search" id="Search">
-                        </label>
+                    <div class="search-input-container">
+                        <input class="search-input" type="search">
                     </div>
-                    <div class="notification">
-                        <img src="Icons/light-theme-icons/notification.png" alt="notification" >
+                </div>
+                <div class="npm-container">
+                    <div class="notification-container">
+                        <img src="Icons/light-theme-icons/notification.png" alt="">
                     </div>
-                    <div class="profile-photo">
-                        <img src="Images/profile-photo.jpg" alt="profile-photo" >
+                    <div class="profile-photo-container">
+                        <img src="Images/profile-photo.jpg" alt="" srcset="">
                     </div>
-                    <div class="my-name">
+                    <div class="name-container">
                         <p>Omar Ashraf</p>
                     </div>
                 </div>
-                <div class="second-header">
-
+            </div>
+            <div class="second-header">
+                <div class="pg-container">
+                    <div class="pfp-container">
+                        <img src="Images/profile-photo.jpg" alt="">
+                    </div>
+                    <div class="greet-container">
+                        <p>Hi,there</p>
+                        <h1>Omar Ashraf (@Omar)</h1>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <div><button type="button">New</button></div>
+                    <div><button type="button">Upload</button></div>
+                    <div><button type="button">Share</button></div>
                 </div>
             </div>
-        </section>
-        <section class="content-container">
-            
+            <div class="titles">
+                <div class="your-projects">
+                    <p>Your Projects</p>
+                </div>
+                <div class="announcements">
+                    <p>Announcements</p>
+                </div>
+            </div>
+            <div class="pa">
+                <div class="projects">
+                    <div class="box-info">
+                        <div class="project-content">
+                            <h3>Super Cool Project</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Excepturi consequatur nisi illo doloremque a. Harum quidem modi quibusdam quod voluptates, 
+                                iusto adipisci quaerat commodi eum molestias at? Quod, hic corrupti!
+                            </p>
+                            <div class="bss">
+                                <img src="Icons/light-theme-icons/bookmark.png" alt="">
+                                <img src="Icons/light-theme-icons/seen.png" alt="">
+                                <img src="Icons/light-theme-icons/share.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-info">
+                        <div class="project-content">
+                            <h3>Less Cool Project</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Excepturi consequatur nisi illo doloremque a. Harum quidem modi quibusdam quod voluptates, 
+                                iusto adipisci quaerat commodi eum molestias at? Quod, hic corrupti!
+                            </p>
+                            <div class="bss">
+                                <img src="Icons/light-theme-icons/bookmark.png" alt="">
+                                <img src="Icons/light-theme-icons/seen.png" alt="">
+                                <img src="Icons/light-theme-icons/share.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-info">
+                        <div class="project-content">
+                            <h3>Impossible App</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Excepturi consequatur nisi illo doloremque a. Harum quidem modi quibusdam quod voluptates, 
+                                iusto adipisci quaerat commodi eum molestias at? Quod, hic corrupti!
+                            </p>
+                            <div class="bss">
+                                <img src="Icons/light-theme-icons/bookmark.png" alt="">
+                                <img src="Icons/light-theme-icons/seen.png" alt="">
+                                <img src="Icons/light-theme-icons/share.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-info">
+                        <div class="project-content">
+                            <h3>Easy Peasy App</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Excepturi consequatur nisi illo doloremque a. Harum quidem modi quibusdam quod voluptates, 
+                                iusto adipisci quaerat commodi eum molestias at? Quod, hic corrupti!
+                            </p>
+                            <div class="bss">
+                                <img src="Icons/light-theme-icons/bookmark.png" alt="">
+                                <img src="Icons/light-theme-icons/seen.png" alt="">
+                                <img src="Icons/light-theme-icons/share.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-info">
+                        <div class="project-content">
+                            <h3>Ad Blocker</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Excepturi consequatur nisi illo doloremque a. Harum quidem modi quibusdam quod voluptates, 
+                                iusto adipisci quaerat commodi eum molestias at? Quod, hic corrupti!
+                            </p>
+                            <div class="bss">
+                                <img src="Icons/light-theme-icons/bookmark.png" alt="">
+                                <img src="Icons/light-theme-icons/seen.png" alt="">
+                                <img src="Icons/light-theme-icons/share.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-info">
+                        <div class="project-content">
+                            <h3>Money Maker</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Excepturi consequatur nisi illo doloremque a. Harum quidem modi quibusdam quod voluptates, 
+                                iusto adipisci quaerat commodi eum molestias at? Quod, hic corrupti!
+                            </p>
+                            <div class="bss">
+                                <img src="Icons/light-theme-icons/bookmark.png" alt="">
+                                <img src="Icons/light-theme-icons/seen.png" alt="">
+                                <img src="Icons/light-theme-icons/share.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="announce">
+                    <div class="box-announce">
+                        <div class="announce1">
+                            <h5>Site Maintenance</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Ipsam, nam de
+                            </p>
+                        </div>
+                        <hr>
+                        <div class="announce2">
+                            <h5>Community Share Day</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Ipsam, nam de
+                            </p>
+                        </div>
+                        <hr>
+                        <div class="announce3">
+                            <h5>Updated Privacy Policy</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Ipsam, nam de
+                            </p>
+                        </div>
+                    </div>
+                    <h3>Trending</h3>
+                    <div class="box-announce">
+                        <div class="trending1">
+                            <div class="pf-container">
+                                <img src="Images/profile-photo.jpg" alt="">
+                            </div>
+                            <div class="introduce-container">
+                                <h5>@Omar</h5>
+                                <p>World Peace Builder</p>
+                            </div>
+                        </div>
+                        <div class="trending2">
+                            <div class="pf-container">
+                                <img src="Images/profile-photo.jpg" alt="">
+                            </div>
+                            <div class="introduce-container">
+                                <h5>@Omar</h5>
+                                <p>Super Cool Project</p>
+                            </div>
+                        </div>
+                        <div class="trending3">
+                            <div class="pf-container">
+                                <img src="Images/profile-photo.jpg" alt="">
+                            </div>
+                            <div class="introduce-container">
+                                <h5>@Omar</h5>
+                                <p>Life Changing App</p>
+                            </div>
+                        </div>
+                        <div class="trending4">
+                            <div class="pf-container">
+                                <img src="Images/profile-photo.jpg" alt="">
+                            </div>
+                            <div class="introduce-container">
+                                <h5>@Omar</h5>
+                                <p>No Traffic Maker</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 </body>

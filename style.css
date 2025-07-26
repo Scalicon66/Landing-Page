@@ -2,22 +2,22 @@
 
 body{ 
     font-family: sans-serif;
+    background-color: rgb(189, 187, 187);
+
 }
 
-.grid-container{
+main{
     display: flex;
 }
 
-.sidebar{
-    background-color: rgb(47, 47, 221);
-    height: 920px;
+.side-content{
+    border: 5px solid rgb(47, 47, 221);
     width: 15%;
-    left: 0;
-    position: fixed;
+    height: 910px;
+    background-color: rgb(47, 47, 221);
 }
- 
 
-.Dashboard{
+.dashboard{
     position: relative;
     width: 75%;
     display: flex;
@@ -27,15 +27,11 @@ body{
     cursor: pointer;
 }
 
-.Dashboard img{
-    width: 20%;
-}
-
-.Dashboard h2{
+.dashboard h1{
     margin-top: 3px;
 }
 
-.Home{
+.home{
     position: relative;
     width: 50%;
     display: flex;
@@ -47,7 +43,7 @@ body{
     cursor: pointer;
 }
 
-.Home::after {
+.home::after {
   content: '';
   position: absolute;
   left: 0;
@@ -58,13 +54,11 @@ body{
   transition: width 0.3s ease;
 }
 
-.Home:hover::after {
+.home:hover::after {
   width: 70%;
 }
 
-
-
-.Profile{
+.profile{
     position: relative;
     width: 50%;
     display: flex;
@@ -76,7 +70,7 @@ body{
     cursor: pointer;
 }
 
-.Profile::after{
+.profile::after{
     content: '';
     position: absolute;
     left: 0;
@@ -87,11 +81,11 @@ body{
     transition: width 0.3s ease;
 }
 
-.Profile:hover::after{
+.profile:hover::after{
     width: 75%;
 }
 
-.Messages{
+.messages{
     position: relative;
     width: 50%;
     display: flex;
@@ -103,7 +97,7 @@ body{
     cursor: pointer;
 }
 
-.Messages::after{
+.messages::after{
     content: '';
     position: absolute;
     left: 0;
@@ -114,11 +108,11 @@ body{
     transition: width 0.3s ease;
 }
 
-.Messages:hover::after{
+.messages:hover::after{
     width: 95%;
 }
 
-.History{
+.history{
     position: relative;
     width: 50%;
     display: flex;
@@ -130,7 +124,7 @@ body{
     cursor: pointer;
 }
 
-.History::after{
+.history::after{
     content: '';
     position: absolute;
     left: 0;
@@ -141,11 +135,12 @@ body{
     transition: width 0.3s ease;
 }
 
-.History:hover::after{
-    width: 80%;
+.history:hover::after{
+    width: 77%;
 }
 
-.Tasks{
+
+.tasks{
     position: relative;
     width: 50%;
     display: flex;
@@ -157,7 +152,7 @@ body{
     cursor: pointer;
 }
 
-.Tasks::after{
+.tasks::after{
     content: '';
     position: absolute;
     left: 0;
@@ -168,11 +163,11 @@ body{
     transition: width 0.3s ease;
 }
 
-.Tasks:hover::after{
+.tasks:hover::after{
     width: 69%;
 }
 
-.Communities{
+.communities{
     position: relative;
     width: 50%;
     display: flex;
@@ -184,7 +179,7 @@ body{
     cursor: pointer;
 }
 
-.Communities::after{
+.communities::after{
     content: '';
     position: absolute;
     left: 0;
@@ -195,11 +190,11 @@ body{
     transition: width 0.3s ease;
 }
 
-.Communities:hover::after{
+.communities:hover::after{
     width: 117%;
 }
 
-.Settings{
+.setting{
     position: relative;
     width: 50%;
     display: flex;
@@ -211,7 +206,7 @@ body{
     cursor: pointer;
 }
 
-.Settings::after{
+.setting::after{
     content: '';
     position: absolute;
     left: 0;
@@ -222,11 +217,11 @@ body{
     transition: width 0.3s ease;
 }
 
-.Settings:hover::after{
+.setting:hover::after{
     width: 85%;
 }
 
-.Support{
+.support{
     position: relative;
     width: 50%;
     display: flex;
@@ -238,7 +233,7 @@ body{
     cursor: pointer;
 }
 
-.Support::after{
+.support::after{
     content: '';
     position: absolute;
     left: 0;
@@ -249,11 +244,11 @@ body{
     transition: width 0.3s ease;
 }
 
-.Support:hover::after{
+.support:hover::after{
     width: 83%;
 }
 
-.Privacy{
+.privacy{
     position: relative;
     width: 50%;
     display: flex;
@@ -265,7 +260,7 @@ body{
     cursor: pointer;
 }
 
-.Privacy::after{
+.privacy::after{
     content: '';
     position: absolute;
     left: 0;
@@ -276,102 +271,436 @@ body{
     transition: width 0.3s ease;
 }
 
-.Privacy:hover::after{
+.privacy:hover::after{
     width: 80%;
 }
 
-.navbar{
-    background-color: white;
-    height: 160px;
-    width: 85%;
-    left: 0;
-    position: fixed;
-    margin-left: 287.5px;
-    box-shadow: 30px 0px 30px 0px rgb(59, 57, 57);
+
+.main-content{
+    width: 84%;
+    height: 910px;
 }
 
 .first-header{
+    border: 5px solid white;
+    background-color: white;
+    width: 100%;
+    height: 70px;
     display: flex;
-    border: 5px solid blue;
-    height: 50px;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.search{
-    position: relative;
-    margin: 20px 0px 0px 40px;
+.search-container{
+    display: flex;
+    gap: 5px;
     cursor: pointer;
+    padding-left: 100px;
 }
 
-.search img{
-    width: 85%;
+.search-input{
+    width: 200%;
+    font-size: large;
+    border-radius: 15px 15px 15px 15px;
+    background-color: rgb(190, 188, 188);
 }
 
-.search-input input{
-    background-color: rgb(207, 209, 209);
-    height: 25px;
-    border-radius: 30dvh;
-    margin: 16px 0px 0px 10px;
+.npm-container{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-right: 100px;
 }
 
-.notification{
-    position: relative;
-    margin: 20px 0px 0px 40px;
-    cursor: pointer;
-}
 
-.notification img{
-    width: 90%;
-}
-
-.profile-photo{
-    position: relative;
-    margin: 8px 0px 0px 20px;
-}
-
-.profile-photo img{
+.profile-photo-container img{
+    width: 45px;
+    height: 45px;
+    border-radius: 25px;
     object-fit: cover;
-    height: 40px;
-    width: 145%;
-    border-radius: 50% ;
 }
 
-.my-name{
-    position: relative;
-    
+.name-container{
+    font-size: large;
+    font-weight: bold;
 }
+
 
 .second-header{
+    border: 5px solid white;
+    background-color: white;
+    width: 100%;
     display: flex;
-    border: 5px solid blue; 
-    height: 90px;
+    justify-content: space-between;
+    height: 75px;
 }
 
-.content-container{
-    background-color: grey;
-    height: 805px;
-    width: 85%;
-    margin-top: 115px;
-    margin-left: 288px;
-}
-
-.content-header{
-    border: 5px solid blue;
-    height: 100px;
-}
-
-.content-sides-container{
+.pg-container{
     display: flex;
-    margin-top: 105px;
+    gap: 10px;
+    padding-left: 100px;
 }
 
-.content-left-side{
-    border: 5px solid orange;
-    width: 70%;    
+.pfp-container img{
+    width: 75px;
+    height: 75px;
+    border-radius: 40px;
+    object-fit: cover;
+}
+
+.greet-container p{
+    font-weight: bold;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    gap: 27px;
+    padding-right: 100px;
+}
+
+.buttons button{
+    padding: 15px 15px 15px 15px;
+    border-radius: 10px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+
+.buttons button:hover{
+    background-color: rgb(55, 55, 240);
+    transition: 0.3s ease;
+}
+
+
+.titles{
+    border: 5px solid rgb(189, 187, 187);
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(189, 187, 187);
+    width: 100%;
     height: 50px;
+    align-items: center;
+    font-weight: bold;
+    font-size: large;
 }
 
-.content-right-side{
-    border: 5px solid yellow;
-    width: 30%;
-    height: 680px;
+.your-projects{
+    padding-left: 25px;
 }
+
+.announcements{
+    padding-right: 235px;
+}
+
+
+.pa{
+    border: 5px solid rgb(189, 187, 187);
+    width: 100%;
+    display: flex;
+    background-color: rgb(189, 187, 187);
+}
+
+.projects{
+    border: 5px solid rgb(189, 187, 187);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 0px 0px 0px 20px;
+    width: 100%;
+    height: 675px;
+}
+
+.box-info{
+    background-color: white;
+    width: 90%;
+    height: 250px;
+    border-radius: 1dvh;
+    box-shadow: -7px 0px 0px 0px orange;
+}
+
+.project-content{
+    padding: 25px 0px 0px 15px;
+}
+
+.project-content p{
+    color: rgb(71, 71, 71);
+}
+
+.bss{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    gap: 25px;
+    padding: 40px 40px 0px 0px;
+    cursor: pointer;
+}
+
+
+.announce{
+    border: 5px solid rgb(189, 187, 187);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 0px 75px 0px 0px;
+    width: 25%;
+    height: 675px;
+}
+
+.announce h5{
+    padding: 20px 0px 0px 30px;
+}
+
+.announce p{
+    font-size: small;
+    padding: 0px 0px 0px 30px;
+    color: rgb(71, 71, 71)
+}
+
+.announce hr{
+    width: 90%; 
+    border: 1px solid grey; 
+    margin: 0px 10px 0px 10px;
+}
+
+.announce1{
+    border: 5px solid white;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.announce2{
+    border: 5px solid white;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.announce3{
+    border: 5px solid white;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.box-announce{
+    background-color: white;
+    width: 100%;
+    height: 300px;
+    border-radius: 1dvh;
+}
+
+
+.box-announce p{
+    color: rgb(71, 71, 71)
+}
+
+.pf-container{
+    padding: 10px 0px 0px 15px;
+}
+
+.pf-container img{
+    width: 55px;
+    height: 55px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+
+.trending1{
+   border: 5px solid white; 
+   height: 65px;
+   display: flex;
+}
+
+.trending2{
+   border: 5px solid white; 
+   height: 65px;
+   display: flex;
+}
+.trending3{
+   border: 5px solid white; 
+   height: 65px; 
+   display: flex;
+}
+
+.trending4{
+   border: 5px solid white; 
+   height: 65px; 
+   display: flex;
+}
+
+    
+    @media (max-width: 1400px) {
+        .side-content{
+            height: 1100px;
+        }
+
+        .pa{
+            height: 775px;
+        }
+
+        .side-content > div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .projects > div{
+            margin: 3px;
+        }
+    }
+
+    @media (max-width: 1200px) {
+        .side-content{
+            width: 20%;
+            height: 1755px;
+        }
+
+        .home{
+            margin: 0px 0px 20px 18px;
+        }
+
+        .profile{
+            margin: 0px 0px 20px 20px;
+        }
+
+        .messages{
+            margin: 0px 0px 20px 35px;
+        }
+
+        .history{
+            margin: 0px 0px 20px 25px;
+        }
+
+        .tasks{
+            margin: 0px 0px 20px 18px;
+        }
+
+        .communities{
+            margin: 0px 0px 70px 53px;
+        }
+
+        .setting{
+            margin: 0px 0px 20px 30px;
+        }
+
+        .support{
+            margin: 0px 0px 20px 29px;
+        }
+
+        .privacy{
+            margin: 0px 0px 20px 26px;
+        }
+
+        .search-input{
+            width: 100%;
+        }
+
+        .search-container{
+            padding-left: 25px;
+        }
+
+        .npm-container{
+            padding-right: 25px;
+        }
+
+        .pg-container{
+            padding-left: 5px;
+        }
+
+        .buttons{
+            padding-right: 5px;
+        }
+
+        .projects{
+            grid-template-columns: repeat(auto-fit, minmax(305px, 1fr));
+        }
+
+        .announcements{
+            padding-right: 170px;
+        }
+    }
+
+    @media (max-width: 992px) {
+        .side-content{
+            display: none; 
+        }
+        .first-header , .second-header{
+            width: 118%; 
+        }
+
+        .projects{
+            grid-template-columns: repeat(auto-fit,minmax(318px, 1fr));
+        }
+
+        .announce{
+            width: 15%;
+        }
+      
+        .pg-container {
+            padding-left: 20px; 
+        }
+      
+        .buttons {
+            padding-right: 20px; 
+        }
+
+        .announcements{
+            padding-right: 50px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .announce{
+            width: 20%;
+        }
+
+    }
+
+    @media (max-width: 576px) {
+        .search-input{
+            width: 60%;
+        }
+
+        .pfp-container img{
+            width: 40px;
+            height: 40px;
+        }
+
+        .greet-container{
+            font-size: small;
+        }
+
+        .buttons button{
+            padding: 10px;
+        }
+
+        .box-info{
+            width: 90%;
+        }
+
+        .projects{
+            width: 60%;
+        }
+
+        .announcements{
+            padding-right: 7px;
+        }
+
+        .box-announce{
+            width: 80%;
+        }
+
+        .bss{
+            padding: 12px 12px 0px 0px;
+        }
+
+        .bss img{
+            width: 7%;
+        }
+    }
